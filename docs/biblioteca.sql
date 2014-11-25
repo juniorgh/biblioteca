@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 25-Nov-2014 às 16:26
+-- Generation Time: 25-Nov-2014 às 18:44
 -- Versão do servidor: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `aluno` (
 INSERT INTO `aluno` (`alunoId`, `alunoNome`, `alunoCurso`) VALUES
 (2, 'aluno 2 ', 'português'),
 (3, 'aluno 1', 'matematica'),
-(4, 'Thales Vinicios', 'Analise e Desenvolvimento De sistemas'),
+(4, 'Thalles Vinicius', 'Analise e Desenvolvimento De sistemas'),
 (5, 'Tester 4', 'Ciência da Computação');
 
 -- --------------------------------------------------------
@@ -96,18 +96,18 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `usuarioNome` varchar(200) NOT NULL,
   `usuarioLogin` varchar(200) NOT NULL,
   `usuarioSenha` varchar(100) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
 
 --
 -- Extraindo dados da tabela `usuario`
 --
 
 INSERT INTO `usuario` (`usuarioId`, `usuarioNome`, `usuarioLogin`, `usuarioSenha`) VALUES
-(10, 'Thalles Vinicios', 'thalles', '9d5e91ac70925969ec7784f3602f341b'),
-(11, 'tester 1', 'tester1', '72a3dcef165d9122a45decf13ae20631'),
+(11, 'tester1', 'tester1', '72a3dcef165d9122a45decf13ae20631'),
 (12, 'tester2', 'tester2', 'tester2'),
 (13, 'tester3', 'tester3', 'tester3'),
-(14, 'tester4', 'tester4', 'tester4');
+(14, 'tester4', 'tester4', 'tester4'),
+(16, 'Thalles Vinicius', 'thalles', 'vinicius');
 
 --
 -- Indexes for dumped tables
@@ -160,7 +160,7 @@ MODIFY `livroId` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-MODIFY `usuarioId` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
+MODIFY `usuarioId` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 --
 -- Constraints for dumped tables
 --
@@ -175,4 +175,3 @@ ADD CONSTRAINT `fkEmprestimoLivro` FOREIGN KEY (`emprestimoLivroId`) REFERENCES 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-

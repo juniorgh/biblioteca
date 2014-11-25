@@ -54,7 +54,7 @@ class Application_Model_Usuario {
     public static function update(array $data) {
         
         $usuario = new Application_Model_DbTable_Usuario();
-        $where = $usuario->getAdapter()->quoteInto('usuarioID = ?', $data['usuarioId']);
+        $where = $usuario->getAdapter()->quoteInto('usuarioId = ?', $data['usuarioId']);
         unset($data['usuarioId']);
         return $usuario->update($data, $where);
     }

@@ -41,6 +41,7 @@ class UsuarioController extends Zend_Controller_Action {
             if (!array_key_exists('usuarioId', $params)) {
                 $usuario->save($params);
             } else {
+                
                 if (empty($params['usuarioSenha'])) {
                     unset($params['usuarioSenha']);
                 } else {
@@ -58,9 +59,7 @@ class UsuarioController extends Zend_Controller_Action {
                     if (empty($params['usuarioNome'])) {
                         unset($params['usuarioNome']);
                     }
-                    echo '<pre>';
-                    print_r($params);
-
+                    
                     $usuario->update($params);
                 }
             }
