@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            Biblioteca
+        </title>
+    </head>
+    <body>
+        <form action="<?php echo $this->url(array('controller' => 'auth', 'action' => 'login'),null,true);?>" method="POST">
+            <label>
+                Digite seu login
+            </label><br/>
+            <input type="text" name="usuarioLogin"/><br/>
+            
+            <label><br/>
+                Digite sua senha
+            </label>
+            <br/>
+            <input type="text" name="usuarioSenha"/>
+            <input type="submit" value="logar"/>
+        </form>
+    </body>
+</html>

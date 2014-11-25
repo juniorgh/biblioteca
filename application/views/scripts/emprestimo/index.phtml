@@ -1,0 +1,45 @@
+<div style="width: 800px; text-align: center; margin: auto;">
+    <a href="<?php echo $this->url(array('controller' => 'emprestimo', 'action' => 'form'),null,TRUE);?>" class="btn btn-info" >Novo</a>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>
+                    Aluno
+                </th>
+                <th>
+                    Livro
+                </th>
+                <th>
+                    Status
+                </th>
+                <th>
+                    Devolução
+                </th>   
+                <th>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($this->emprestimos as $emprestimo) { ?>
+            <tr>
+                <td>
+                    <?php echo utf8_encode($emprestimo['alunoNome']);?>
+                </td>
+                <td>
+                    <?php echo utf8_encode($emprestimo['livroTitulo']);?>
+                </td>
+                <td>
+                    <?php echo utf8_encode($emprestimo['emprestimoStatus']);?>
+                </td>
+                <td>
+                    <?php echo utf8_encode($emprestimo['emprestimoDevolucao']);?>
+                </td>
+                <td style="text-align: right;">
+                    <a href="<?php echo $this->url(array('controller' => 'emprestimo', 'action' => 'drop', 'id' => $emprestimo['emprestimoId']),null,true);?>" class="btn btn-danger"><i></i> Excluir</a>
+                    <a href="<?php echo $this->url(array('controller' => 'emprestimo', 'action' => 'form','id' => $emprestimo['emprestimoId']),null,true);?>" class="btn btn-inverse"><i></i> Editar</a>
+                </td>
+            </tr>
+            <?php } ?>
+        </tbody>
+    </table>
+</div>

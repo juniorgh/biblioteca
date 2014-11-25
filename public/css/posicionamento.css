@@ -1,0 +1,51 @@
+/* 
+    Document   : posicionamento
+    Created on : 22/09/2012, 17:03:56
+    Author     : William
+    Description:
+        Posicionando os principais elementos da página
+*/
+
+#all {
+    width:100%;
+    min-height:100%;
+    position:relative;
+}
+
+#header {
+    width: 100%;
+    background: url('../images/header_bg.png') repeat-x;
+}
+
+#header #header_content {
+    width: 940px;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 30px;
+    position: relative;
+}
+
+#header section#sing-in {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#content_wrap {
+    padding-bottom: 100px; /* Deve ser o tamanho do rodapé */
+    margin: 0 auto;
+    width: 940px;
+}
+
+.content {
+    margin: 20px auto;
+}
+
+#footer {
+    width:100%;
+    position:absolute;
+    bottom:0;
+    background: url('../images/bg_footer.png');
+    border-bottom: 3px solid #3e3e3e;
+    height: 50px;
+}

@@ -1,0 +1,33 @@
+<div style="width: 800px; text-align: center; margin: auto;">
+    <a href="<?php echo $this->url(array('controller' => 'aluno', 'action' => 'form'),null,TRUE);?>" class="btn btn-info" >Novo</a>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>
+                    Aluno
+                </th>
+                <th>
+                    Curso
+                </th>
+                <th>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($this->alunos as $aluno) { ?>
+            <tr>
+                <td>
+                    <?php echo utf8_encode($aluno['alunoNome']);?>
+                </td>
+                <td>
+                    <?php echo utf8_encode($aluno['alunoCurso']);?>
+                </td>
+                <td style="text-align: right;">
+                    <a href="<?php echo $this->url(array('controller' => 'aluno', 'action' => 'drop', 'id' => $aluno['alunoId']),null,true);?>" class="btn btn-danger"><i></i> Excluir</a>
+                    <a href="<?php echo $this->url(array('controller' => 'aluno', 'action' => 'form','id' => $aluno['alunoId']),null,true);?>" class="btn btn-inverse"><i></i> Editar</a>
+                </td>
+            </tr>
+            <?php } ?>
+        </tbody>
+    </table>
+</div>

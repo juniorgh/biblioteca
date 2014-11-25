@@ -1,0 +1,119 @@
+/* 
+    Document   : reset
+    Created on : 22/09/2012, 17:01:54
+    Author     : William
+    Description:
+        Resets do layout
+*/
+
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+html, body {
+    height: 100%;
+}
+
+* html #all {
+    height: 100%;
+}
+
+* {
+    margin:0;
+    padding:0;	
+}
+
+body {
+    background: url('../images/background.jpg') repeat;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+}
+
+button {
+    border: 0;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration:none;
+    border: 0;
+}
+
+h3 {
+    text-transform: uppercase;
+    border-bottom: 1px solid #757575;
+    color: #3e3e3e;
+    padding-bottom: 2px;
+    font-size: 17px;
+}
+
+.clear{
+    clear:both;	
+}
+
+.input {
+    background: url('../images/bg_input.png');
+    height: 25px;
+    width: 205px;
+    display: block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.btn {
+    min-width: 5px;
+    height: 24px;
+    padding: 0px 9px 0 9px;
+    display: block;
+    background: url('../images/bt_bg.png');
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    color: #fff;
+    behavior: url('ie-css3.htc');
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.btn:active {
+    background: url('../images/bt_bg_active.png');
+}
+
+.seta {
+    background: transparent url('../images/seta.png') no-repeat;
+    height: 10px;
+    width: 6px;
+    display: block;
+    float: right;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+
+input {
+    margin-top: 2px;
+    margin-left: 13px;
+    width: 175px;
+    border: 0;
+    height: 21px;
+    color: #BCBCBC;
+}
+
+input:focus {
+    outline:none;
+    color: #000 !important;
+}

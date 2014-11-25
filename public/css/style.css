@@ -1,0 +1,368 @@
+@import url('reset.css');
+@import url('posicionamento.css');
+
+.body{
+    background: url('../images/textura.png');
+}
+
+/* Logo do site */
+#logo {
+    text-align: center;
+}
+
+
+#header #logo a {
+    background: url('../images/.png') no-repeat;
+    height: 88px;
+    width: 192px;
+    display: block;
+}
+
+#menu li{
+    display: inline-block;
+}
+
+#menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #990e29;
+    display: block;
+    padding: 10px;
+}
+
+#menu li a:hover {
+    outline: 2px solid #fff;
+}
+
+
+/* Botão entrar */
+#header section#sing-in a#btn-sing {
+    text-transform: uppercase;
+    color: #525252;
+    font-size: 12px;
+    display: block;
+    background-image: url('../images/bt_entrar.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    width: 80px;
+    height: 30px;
+    padding: 4px 0px;
+}
+
+/* Campo para busca */
+#search {
+    position: relative;
+    float: left;
+    margin-top: 25px;
+}
+
+input#query {
+    width: 155px;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.bordinha {
+    box-shadow: 0px 0px 4px 0px black;
+    border-radius: 10px;
+    width: 204px;
+}
+
+.btn-search {
+    background: url('../images/bt_lupa.png') no-repeat;
+    height: 16px;
+    width: 16px;
+    margin-top: 4px;
+    margin-left: 9px;
+    cursor: pointer;
+}
+
+/* Bloco de login que ficará oculto */
+#login_bar {
+    height: 120px;
+    width: 100%;
+    background: #525252;
+    margin: 0 auto;
+    display: none;
+}
+
+#login_bar section {
+    margin-left: 40%;
+    display: block;
+}
+
+#login_bar #f_login {
+    float: right;
+    padding-top: 10px;
+    width: 205px;
+    height: 100px;
+}
+
+#f_login .field {
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+    width: 100%;
+}
+
+#f_login .btn-entrar {
+    position: absolute;
+    right: 0;
+    display: block;
+}
+
+/* Bloco do conteudo - Barra 1 */
+#bar_1 {
+    text-transform: uppercase;
+    color: #3e3e3e;
+    width: 100%;
+    font-size: 12.3px;
+}
+
+#breadcrumb {
+    float: left;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+#breadcrumb li {
+    float: left;
+    padding: 0 3px;
+}
+
+#breadcrumb li.pagina {
+    color: #a41b1b;
+}
+
+#filter_galery {
+    float: right;
+    margin-right: 25px;
+}
+
+#filter_galery li {
+    float: left;
+    padding: 0 5px;
+}
+
+#filter_galery li a {
+    height: 21px;
+    padding: 4px 9px 0 9px;
+    display: block;
+    color: #3e3e3e;
+}
+
+#filter_galery li a:hover,
+#filter_galery li a.ativo {
+    background: url('../images/bt_bg.png');
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    color: #fff;
+    behavior: url('ie-css3.htc');
+}
+
+#filter_galery li a:active {
+    background: url('../images/bt_bg_active.png');
+}
+
+
+/* Bloco de conteudo - Galeria */
+#galery {
+    width: 900px;
+    height: 400px;
+    margin: 20px auto;
+    position: relative;
+}
+
+#galery #overlay {
+    width: 200px;
+    height: 200px;
+    background: #000;
+    opacity: .7;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+#galery div.size50 img {
+    height: 50px;
+    width: 50px;
+}
+
+#galery div.size100 img {
+    height: 100px;
+    width: 100px;
+}
+
+#galery div.size150 img {
+    height: 150px;
+    width: 150px;
+}
+
+#galery div.size200 img {
+    height: 200px;
+    width: 200px;
+}
+
+#galery > div {
+    position: absolute;
+}
+
+/* Bloco do conteudo - Atualizações */
+#updates {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#updates p {
+    line-height: 22px;
+    padding: 8px 20px 35px 10px;
+    border-bottom: 1px solid black;
+    width: 390px;
+    position: relative;
+}
+
+#updates aside {
+    float: left;
+    width: 450px;
+    color: #5d5d5d;
+}
+/*
+#updates aside p.post {
+    border-bottom: 1px solid #000;
+}*/
+
+#updates #post a {
+    width: 150px;
+}
+
+#updates #post .ftr {
+    margin-top: 10px;
+    display: block;
+}
+
+#updates .ver_postagem {
+    margin-top: 5px;
+}
+
+#comment h3 {
+    padding-left: 40px;
+}
+
+#comment p.comment {
+    margin-left: 30px;
+}
+
+#updates #comment .ftr {
+    margin-bottom: 6px;
+    display: block;
+}
+
+/* Rodape */
+#footer_content {
+    width: 940px;
+    margin: 0 auto;
+}
+
+#footer_content aside a {
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+#footer_content a {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    display: block;
+}
+
+#footer_menu ul li {
+    float: left;
+    margin: 18px 25px 0 0;
+}
+
+#blog_texto {
+    float: right;
+    width: 267px;
+    margin-top: 10px;
+}
+#blog_img {
+
+    margin-top: 10px;
+}
+
+#blog_cursos {
+    text-align: justify;
+    float: right;
+    margin-top: 52px;
+    width: 180px;
+}
+
+
+#postagem_texto {
+    float: right;
+    width: 267px;
+    margin-top: 10px;
+}
+#postagem_img {
+
+    margin-top: 10px;
+    float: left;
+    margin-right: 10px;
+
+}
+#postagem_cursos {
+    float: right;
+    margin-top: 52px;
+    width: 180px;
+}
+
+.postagens-recentes{
+    margin: auto;
+    height: 330px;
+    width: 1000px;
+}
+
+
+.postagens {
+border: 2px solid #ddd4d5;
+    margin-left: 13px;
+    display: inline;
+    width: 315px;
+    height: 260px;
+    float: left;
+    margin-top: 10px;
+}
+
+.projetos{
+    width: 1000px;
+    margin: auto;
+    padding-top: 5px;
+}
+.centralizar{
+    text-align: center;
+}
+
+#projetos-gerais{
+    margin: auto;
+    width: 1030px;
+    border: 2px solid #ddd4d5;
+    border-radius: 4px;
+}
+
+#cursos{
+    width: 800px;
+    margin: auto;
+}
+
+#curso-nome{
+    width: 390px;
+    float: left;
+}
+#curso-visualizar{
+    width: 390px;
+    float: left;
+    text-align: right;
+}
+
