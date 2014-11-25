@@ -68,8 +68,7 @@ class AuthController extends Zend_Controller_Action {
     public function logoutAction() {
         //Limpa dados da Sessão
         Zend_Auth::getInstance()->clearIdentity();
-        $this->_flashMessenger->addMessage('Credenciais inválidas!');
-        $this->_redirect('auth');
+        $this->_redirect('index');
     }
 
 }

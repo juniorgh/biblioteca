@@ -1,17 +1,18 @@
 <?php
 
-class HomeController extends Zend_Controller_Action
-{
+class HomeController extends Zend_Controller_Action {
 
-    public function init()
-    {
-        /* Initialize action controller here */
+    public function init() {
+
+        if (Zend_Auth::getInstance()->getIdentity()) {
+            $usuario = Zend_Auth::getInstance()->getIdentity();
+
+            $this->view->assign('usuarioLogado', $usuario);
+        }
     }
 
-    public function indexAction()
-    {
+    public function indexAction() {
+        
     }
-
 
 }
-
